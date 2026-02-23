@@ -1,0 +1,81 @@
+═══════════════════════════════════════════════════════════
+  cPanel Server Deployment Checklist - Quick Guide
+═══════════════════════════════════════════════════════════
+
+✅ STEP 1: Local Build (Optional)
+   └─ npm install
+   └─ npm run build
+   └─ .next folder ban jayega
+
+✅ STEP 2: Files Upload (FTP ya cPanel File Manager)
+   Upload Location: /home/ietmalay/iet/
+   
+   UPLOAD KAREIN:
+   ✓ app/
+   ✓ components/
+   ✓ hooks/
+   ✓ lib/
+   ✓ public/
+   ✓ styles/
+   ✓ .next/              (agar locally build kiya)
+   ✓ app.js              ⭐ NEW FILE (server startup)
+   ✓ next.config.mjs
+   ✓ package.json
+   ✓ package-lock.json
+   ✓ tsconfig.json
+   ✓ postcss.config.mjs
+   ✓ components.json
+   
+   UPLOAD NA KAREIN:
+   ✗ node_modules/       (server par install hoga)
+   ✗ .git/
+
+✅ STEP 3: cPanel Terminal me Commands
+   
+   Command 1: Virtual environment activate
+   └─ source /home/ietmalay/nodevenv/iet/20/bin/activate
+   
+   Command 2: Directory change
+   └─ cd /home/ietmalay/iet
+   
+   Command 3: Dependencies install
+   └─ npm install --production
+   
+   Command 4: Build (agar server par build karna hai)
+   └─ npm run build
+
+✅ STEP 4: cPanel Configuration Check
+   └─ Application Root: iet ✓
+   └─ Startup File: app.js ✓
+   └─ Node.js Version: 20.20.0 ✓
+   └─ Application Mode: Development ✓
+
+✅ STEP 5: Environment Variables (Agar zaroorat ho)
+   └─ cPanel me "ADD VARIABLE" click karein
+   └─ Example: NODE_ENV=production
+
+✅ STEP 6: Application Restart
+   └─ cPanel me "RESTART" button click karein
+
+✅ STEP 7: Test
+   └─ Browser me open: https://ietmalaysia.com/development
+
+═══════════════════════════════════════════════════════════
+  IMPORTANT NOTES:
+═══════════════════════════════════════════════════════════
+
+⚠️  Agar build error aaye:
+   → Server par manually build karein: npm run build
+   → Logs check karein: /home/ietmalay/dev
+
+⚠️  Agar app start nahi ho:
+   → Logs check karein (Passenger log file)
+   → Node.js version verify karein (20.20.0)
+   → app.js file verify karein (upload hui hai ya nahi)
+
+⚠️  Production Mode ke liye:
+   → Application Mode: Production set karein
+   → NODE_ENV=production environment variable add karein
+
+═══════════════════════════════════════════════════════════
+

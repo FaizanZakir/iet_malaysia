@@ -1,0 +1,87 @@
+═══════════════════════════════════════════════════════════
+  SERVER UPLOAD STRUCTURE
+═══════════════════════════════════════════════════════════
+
+UPLOAD LOCATION: /home/ietmalay/iet/
+
+═══════════════════════════════════════════════════════════
+  FILES/FOLDERS TO UPLOAD:
+═══════════════════════════════════════════════════════════
+
+/home/ietmalay/iet/
+│
+├── 📁 app/                    (Complete folder)
+│   ├── globals.css
+│   ├── layout.tsx
+│   └── page.tsx
+│
+├── 📁 components/             (Complete folder)
+│   ├── chairman-message.tsx
+│   ├── footer.tsx
+│   ├── header.tsx
+│   ├── hero.tsx
+│   ├── who-we-are.tsx
+│   └── ... (sab files)
+│
+├── 📁 hooks/                  (Complete folder)
+│   ├── use-mobile.ts
+│   └── use-toast.ts
+│
+├── 📁 lib/                    (Complete folder)
+│   └── utils.ts
+│
+├── 📁 public/                 (Complete folder)
+│   ├── images/
+│   ├── icon.svg
+│   └── ... (sab files)
+│
+├── 📁 styles/                 (Complete folder)
+│   └── globals.css
+│
+├── 📁 .next/                  (Complete folder - BUILD OUTPUT)
+│   ├── static/
+│   ├── server/
+│   └── ... (sab build files)
+│
+├── 📄 app.js                  ⭐ (Server startup file)
+├── 📄 package.json            ⭐ (ZAROORI - dependencies)
+├── 📄 package-lock.json       (ya pnpm-lock.yaml)
+├── 📄 next.config.mjs
+├── 📄 tsconfig.json
+├── 📄 postcss.config.mjs
+├── 📄 components.json
+├── 📄 next-env.d.ts
+└── 📄 .gitignore              (optional)
+
+═══════════════════════════════════════════════════════════
+  DO NOT UPLOAD:
+═══════════════════════════════════════════════════════════
+
+✗ node_modules/        (Server par install hoga)
+✗ .git/                (Git folder - zaroori nahi)
+✗ .next/               (Agar server par build karein to)
+
+═══════════════════════════════════════════════════════════
+  UPLOAD METHOD:
+═══════════════════════════════════════════════════════════
+
+Option 1: cPanel File Manager
+  → /home/ietmalay/iet/ folder me jayein
+  → Files upload karein
+
+Option 2: FTP Client (FileZilla, WinSCP, etc.)
+  → Host: ietmalaysia.com
+  → Path: /home/ietmalay/iet/
+  → Upload sab files
+
+═══════════════════════════════════════════════════════════
+  AFTER UPLOAD:
+═══════════════════════════════════════════════════════════
+
+1. Verify package.json file exists at: /home/ietmalay/iet/package.json
+2. Click "Run NPM Install" button in cPanel
+3. Click "RESTART" button
+4. Test: https://ietmalaysia.com/development
+
+═══════════════════════════════════════════════════════════
+
