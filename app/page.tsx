@@ -8,11 +8,12 @@ import { Team } from "@/components/team";
 import { Reputation } from "@/components/reputation";
 import { ChairmanMessage } from "@/components/chairman-message";
 import { CTASection } from "@/components/cta-section";
+import { Contact } from "@/components/contact";
 import { Footer } from "@/components/footer";
 
 export default function Home() {
   return (
-    <main className="min-h-screen">
+    <main id="home" className="min-h-screen">
       <Header />
       <Hero />
       {/* <LogoBar /> */}
@@ -24,7 +25,8 @@ export default function Home() {
       <Team />
       {/* <Reputation /> */}
       
-      <CTASection />
+      {/* <CTASection /> */}
+      <Contact />
       <Footer />
     </main>
   );

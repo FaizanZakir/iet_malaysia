@@ -8,25 +8,12 @@ const _lora = Lora({ subsets: ["latin"], variable: "--font-serif" });
 const _outfit = Outfit({ subsets: ["latin"], variable: "--font-sans" });
 
 export const metadata: Metadata = {
-  title: 'IET Malaysia - Building Better Cities, Creating Smarter Lifestyles',
-  description: 'IET Malaysia empowers growth across communities through traffic management solutions and modern real estate development.',
+  title: 'IET Malaysia - Intelligent Ecommerce Technologies | E-commerce & IT Solutions',
+  description: 'IET Malaysia (Intelligent Ecommerce Technologies Sdn Bhd) is a Malaysia-based IT company. We deliver e-commerce solutions, bespoke software development, large IT project management, and web development, and partner with organisations and government agencies for efficient, responsive, and user-centric digital services.',
   generator: 'v0.app',
   icons: {
-    icon: [
-      {
-        url: '/icon-light-32x32.png',
-        media: '(prefers-color-scheme: light)',
-      },
-      {
-        url: '/icon-dark-32x32.png',
-        media: '(prefers-color-scheme: dark)',
-      },
-      {
-        url: '/icon.svg',
-        type: 'image/svg+xml',
-      },
-    ],
-    apple: '/apple-icon.png',
+    icon: '/icons/favicon.jpg',
+    apple: '/icons/favicon.jpg',
   },
 }
 

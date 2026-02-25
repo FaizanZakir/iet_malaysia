@@ -6,11 +6,11 @@ import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const navLinks = [
-  { href: "/", label: "Home", active: true },
-  { href: "/services", label: "Services" },
-  { href: "/about", label: "About Us" },
-  { href: "/projects", label: "Projects" },
-  { href: "/blog", label: "Blog" },
+  { href: "#home", label: "Home" },
+  { href: "#who-we-are", label: "About Us" },
+  { href: "#chairman-message", label: "Chairman's Message" },
+  { href: "#team", label: "Our Team" },
+  { href: "#contact", label: "Contact" },
 ];
 
 export function Header() {
@@ -23,7 +23,7 @@ export function Header() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2">
             <div className="flex flex-col">
-              <img src="/images/logo2.png" alt="Logo" width={240}  />
+              <img src="/images/logo2.png" alt="Logo" width={220}  />
             </div>
           </Link>
 
@@ -33,9 +33,7 @@ export function Header() {
               <Link
                 key={link.href}
                 href={link.href}
-                className={`text-sm font-medium transition-colors hover:text-primary ${
-                  link.active ? "text-primary" : "text-foreground"
-                }`}
+                className="text-sm font-medium transition-colors hover:text-primary text-foreground"
               >
                 {link.label}
               </Link>
@@ -45,7 +43,7 @@ export function Header() {
           {/* Contact Button */}
           <div className="hidden lg:block">
             <Button className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-full px-6">
-              Contact Us
+            Schedule a call
             </Button>
           </div>
 
@@ -72,16 +70,14 @@ export function Header() {
                 <Link
                   key={link.href}
                   href={link.href}
-                  className={`text-sm font-medium transition-colors hover:text-primary ${
-                    link.active ? "text-primary" : "text-foreground"
-                  }`}
+                  className="text-sm font-medium transition-colors hover:text-primary text-foreground"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   {link.label}
                 </Link>
               ))}
               <Button className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-full w-full mt-2">
-                Contact Us
+              Schedule a call
               </Button>
             </nav>
           </div>

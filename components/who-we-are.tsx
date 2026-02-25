@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export function WhoWeAre() {
   return (
-    <section className="py-16 lg:py-24 bg-background">
+    <section id="who-we-are" className="py-16 lg:py-24 bg-background">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           {/* Image */}
