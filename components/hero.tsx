@@ -19,7 +19,7 @@ export function Hero() {
             Intelligent Ecommerce  <br />Technologies Sdn. Bhd. </h1>
             
             <p className="text-muted-foreground text-base lg:text-lg max-w-md leading-relaxed">
-            <strong> Technology. Governance. Regional Scale.</strong></p>
+            <strong> Technology. Governance. ASEAN Scale.</strong></p>
             <p className="text-muted-foreground text-base lg:text-lg max-w-md leading-relaxed">
             <strong>Intelligent Ecommerce Technologies Sdn. Bhd. (IET Malaysia)</strong> is a Malaysia-based technology company focused on building, operating, and scaling e-commerce businesses across the ASEAN region.
             </p>

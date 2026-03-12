@@ -17,7 +17,7 @@ export default function Home() {
       <Header />
       <Hero />
       {/* <LogoBar /> */}
-      <MarqueeBanner />
+      {/* <MarqueeBanner /> */}
       <WhoWeAre />
       
       {/* <TrafficSolutions /> */}
